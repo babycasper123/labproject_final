@@ -1,0 +1,152 @@
+h1,h2,h3,h4,h5,h6,h7,h8,h9,p{
+    color:#333;
+}
+.header{
+    padding: 10px 10px 10px 10px;
+}
+
+/* Side Menu Styles */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(161,42, 125,0.85);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 35px;
+    margin-top:8vh;
+    border-radius: 2px;
+}
+
+.sidenav a {
+    padding: 8px 8px 20px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.1s;
+    text-transform: uppercase;
+}
+
+.sidenav a:hover {
+    color: #cccccc;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color:#f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+.am-navbar-toggle-btn{
+    display: inline-block;
+    background-size: 100% 100%;
+    width: 21px;
+    height: 15px;
+    margin-top: 10px;
+    cursor:pointer;
+}
+
+.am-navbar-toggle-text{
+color: #A12A7D;
+text-transform: uppercase;
+padding: 0px 0px 0px 10px;
+font-size: large;
+}
+
+.am-navbar-toggle-container{
+    padding-top:20px;
+}
+.am-navbar-logo{
+    background: url(../images/amaris_found_logo.png) no-repeat center center;
+    height: 100px;
+    max-width: inherit;
+}
+
+.am-btn.active {
+    background-color: #A12A7D;
+    color : white;
+}
+
+.am-btn.active:hover{
+    background-color: white;
+    color: #A12A7D;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-decoration: none;
+    border: 0.3px solid #A12A7D;
+}
+
+.am-btn {
+    color:#333333;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    font-size: large;
+    background-color: #FFFFFF;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    
+}
+
+.am-btn:hover{
+    background-color: #A12A7D;
+    color : white;
+    transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
+    border-color: #A12A7D;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .am-navbar-btnholder{
+        float: right;
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width:768px) {
+    .am-navbar-toggle-text{
+        display: none;
+    }
+}
+
+.am-nav-open:after{
+    content: "\f0c9";
+    font-family: "FontAwesome";
+    color:black;
+}
+
+.am-nav-close:after{
+    content: "\f00d";
+    font-family: "FontAwesome";
+    color:black;
+}
+
+.side-open{
+    width : 250px;
+}
+
+.side-close{
+    width : 0px;
+}
+
+.am-navbar-toggle-btn{
+    font-size: large;
+}
+
