@@ -1,6 +1,12 @@
-h1,h2,h3,h4,h5,h6,h7,h8,h9,p{
+body,h1,h2,h3,h4,h5,h6,h7,h8,h9,p{
     color:#333;
+    font-family: 'Raleway', sans-serif;
 }
+
+body{
+    background-color: #f8fcff;
+}
+
 .header{
     padding: 10px 10px 10px 10px;
 }
@@ -50,10 +56,6 @@ h1,h2,h3,h4,h5,h6,h7,h8,h9,p{
   .sidenav a {font-size: 18px;}
 }
 
-
-
-
-
 .am-navbar-toggle-btn{
     display: inline-block;
     background-size: 100% 100%;
@@ -101,6 +103,7 @@ font-size: large;
     background-color: #FFFFFF;
     text-decoration: none !important;
     text-transform: uppercase;
+    border-radius: 2px;
     
 }
 
@@ -123,6 +126,11 @@ font-size: large;
 @media only screen and (min-width: 0px) and (max-width:768px) {
     .am-navbar-toggle-text{
         display: none;
+    }
+    .am-navbar-btnholder{
+        float: none;
+        text-align: center;
+        margin-top: 20px;
     }
 }
 
@@ -150,3 +158,107 @@ font-size: large;
     font-size: large;
 }
 
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .am-top-poster{
+        border-radius: 2px;
+        background: url(../images/top_poster.jpg) no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width:768px) {
+    .am-top-poster{
+        border-radius: 2px;
+        background: url(../images/top_poster_mobile.jpg) no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 50vh;
+        margin-top: 50px;
+    }
+
+    .am-work-title{
+        text-align: center;
+    }
+}
+
+
+.am-article-title{
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.am-article-subtitle{
+    font-weight: 600;
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+.am-article-text{
+    font-weight: 500;
+    line-height: 2.5;
+    font-size: 1.2em;
+}
+
+.am-inner-container{
+    padding:40px;
+}
+
+.desc-container{
+    background-color: #A12A7D;
+}
+
+#opertaions-title{
+    color: white;
+}
+
+.am-operations-icons{
+    font-size: 10em;
+    color: white;
+    text-align: center;
+}
+
+.am-operations-items{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.am-operations-text{
+    color:white;
+    font-size: 1.5em;
+    padding-top: 40px;
+}
+
+.am-work-items{
+    background-color: #FFFFFF;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 2px 2px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0px 2px 2px 1px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         0px 2px 2px 1px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    padding:20px;
+}
+
+.am-work-icons{
+    font-size: 13em;
+}
+.am-work-img{
+    text-align: center;
+}
+.am-work-desc{
+    line-height: 2;
+}
+
+.am-projects-container{
+    padding-left: 0px;
+}
+
+.am-columns{
+    float: left;
+    display: block;
+    margin-left:10px;
+}
