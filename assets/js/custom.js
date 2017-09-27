@@ -25,12 +25,36 @@ $(document).ready(function(){
 
       });
 
-
-      $(".seeLess").click(function () {
-        $(this).closest(".am-project-shrinked").stop().slideUp(function() {
-          $(this).prev(".am-project-expand").slideDown();
-        });
+    $(".seeLess").click(function () {
+      $(this).closest(".am-project-shrinked").stop().slideUp(function() {
+        $(this).prev(".am-project-expand").slideDown();
       });
-      
+    });
+
+
+    // Sparkle and Voting
+
+    $(".am-projfund-btn-Sparkle").click(function(){
+      var sparkid = $(this).attr('id');
+      if(localStorage.getItem(sparkid) != null){
+        swal(
+          'Howdy!',
+          'You have already sparkled this project! :)',
+          'info'
+        )
+      }
+      else
+      {
+        var count = parseInt($("."+sparkid).attr("data-sparkCount"));
+        localStorage.setItem(sparkid, sparkid);
+        $("."+sparkid).fadeOut(function(){
+
+          $("."+sparkid).text(count+1).fadeIn("slow");
+
+        });
+        
+      }
+    });
+
 
 });
