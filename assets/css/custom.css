@@ -390,7 +390,7 @@ div.seeLess{
 }
 
 .am-projfund-buttons{
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .mobile{
@@ -403,6 +403,10 @@ div.seeLess{
 @media screen and (min-width: 1200px) {
         .am-project-social > .am-projfund-title , .am-project-social > .am-projfund-text {
             float: right;
+        }
+
+        div.seeMore {
+            margin-left: 120px;
         }
 }
 
@@ -431,9 +435,6 @@ div.seeLess{
         float: left;
         display: block;
         margin-left:20px;
-    }
-    div.seeMore{
-        margin-left: 120px;
     }
     .am-projects-img-thumb-container{
         height: 12vh;
