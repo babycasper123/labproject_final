@@ -20,20 +20,19 @@
   <script src="assets/js/custom.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-social.css">
   <script src="assets/js/sweetalert2.min.js"></script>
 
 </head>
 
 
 <body>
-
-
               
         <header>
                 <div id="mySidenav" class="sidenav side-close">
-                        <a class="sidenav-items" href="#">Homepage</a>
-                        <a class="sidenav-items" href="#">Amaris</a>
-                        <a class="sidenav-items" href="#">Propose a project</a>
+                        <a class="sidenav-items" href="index.html">Homepage</a>
+                        <a class="sidenav-items" href="https://www.amaris.com/">Amaris</a>
+                        <a class="sidenav-items" href="propose_project.html">Propose a project</a>
                 </div>
 
                 <div class="container-fluid">
@@ -42,13 +41,13 @@
                                         <span class="am-navbar-toggle-btn am-nav-open"></span>
                                         <span class="am-navbar-toggle-text">Projects</span>
                                 </div>
-                                <a href="http://www.google.com/">
+                                <a href="index.html">
                                         <div class="col-xs-8 col-sm-4 am-navbar-logo"></div>
                                 </a>
-                                <div class="col-sm-4 col-xs-12">
+                                <div class="col-md-4 col-xs-12">
                                         <div class="am-navbar-btnholder">
-                                        <a href="#" class="am-btn active text-center">Connect</a>
-                                        <a href="#" class="am-btn text-center">Contact</a>
+                                        <a href="mailto: labfoundation@amaris.com" class="am-btn active text-center">Connect</a>
+                                        <a href="propose_project.html" class="am-btn text-center">Contact</a>
                                         </div>
                                 </div>
                         </div>
@@ -140,13 +139,13 @@
                                 <div class="row">
                                         <h4 class="am-article-subtitle">Previous projects funded</h4>
                                         <hr>
-                                        <!-- <div class="col-lg-12 am-projects-container">
-                                                <div class="row am-project-expand">
-                                                                <div class="col-sm-2 col-xs-12 am-projects-img-thumb-container">
+                                        <div class="col-lg-12 am-projects-container">
+                                                        <div class="row am-project-expand row-eq-height">
+                                                                <div class="col-sm-12 col-md-3 am-projects-img-thumb-container">
                                                                         <img class="img-responsive am-projects-img-thumb" src="assets/images/ecology_project.jpg">
                                                                 </div>
         
-                                                                <div class="col-md-10 col-xs-12">
+                                                                <div class="col-md-9 col-xs-12">
                                                                         <div class="am-columns am-projfund-items2">
                                                                                 <h3>Ecology Project</h3>
                                                                                 <p>My Association - 09/13/16</p>
@@ -164,34 +163,40 @@
                                                 </div>
 
                                                 <div class="row am-project-shrinked">
-                                                        <div class="am-projects-img-container">
+                                                        <div class="am-projects-img-container non-mobile">
                                                                 <img class="am-projects-img-expand" src="assets/images/ecology_project.jpg">
                                                         </div>
                                                         <div class="container-fluid am-project-description">
-                                                                <div class="am-columns am-projfund-items2">
+
+                                                                <div class="col-md-3 col-sm-12 am-projfund-items2">
                                                                         <h3 class="expand">Ecology Project</h3>
-                                                                        <p class="expand">My Association - 09/13/16</p>
-                                                                </div>
-                                                                <div class="am-columns am-projfund-items1">
-                                                                        <span class="expand sparkle-holder">
-                                                                                <span data-sparkCount="12" class="sparkle Spark1">12</span>
-                                                                                <span class="sparkle-count"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span>
-                                                                        </span>
-                                                                        <span class="expand vote-holder">
-                                                                                <span data-voteCount ="12" class="vote">12</span>
-                                                                                <span class="vote-count"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                                                                        </span>
-                                                                </div>
-                                                                <div class="am-columns am-projfund-items1">
-                                                                        <p class="expand am-projfund-tags">#Ecology #Sun #Random</p>
-                                                                </div>
-                                                                <div class="am-columns am-projfund-items1 seeLess">
+                                                                        <span class="seeLess mobile">
                                                                                 <i class="fa fa-times expand" aria-hidden="true"></i>
+                                                                        </span>
+                                                                        <div class="expand">My Association - 09/13/16</div>
                                                                 </div>
+
+                                                                <div class="col-md-9 col-sm-12">
+                                                                        <div class="am-projfund-items1">
+                                                                                <span class="expand sparkle-holder">
+                                                                                        <span data-sparkCount="12" class="sparkle Spark">12</span>
+                                                                                        <span data-voteCount ="12" class="sparkle-count"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span>
+                                                                                </span>
+                                                                                <span class="expand vote-holder">
+                                                                                        <span class="vote Vote">12</span>
+                                                                                        <span class="vote-count"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                                                                </span>
+                                                                                <span class="expand am-projfund-tags">#Ecology #Sun #Random</span>
+                                                                                <span class="seeLess non-mobile">
+                                                                                        <i class="fa fa-times expand" aria-hidden="true"></i>
+                                                                                </span>
+                                                                        </div>
+                                                                </div>
+
                                                         </div> 
                                                         <div class="container-fluid am-project-description-2">
                                                                 <div class="row">
-                                                                        <div class="col-lg-9">
+                                                                        <div class="col-lg-9 col-sm-12">
                                                                                 <span class="am-projfund-title">Domain of action : </span>
                                                                                 <span class="am-projfund-subtitle">Energetic Independance </span>
                                                                                 <div class="am-projfund-title spacer">Description:</div>
@@ -207,68 +212,60 @@
                                                                                                 Varius scelerisque risus porttitor praesent porttitor enim nunc curabitur amet, aliquam ac convallis fusce non auctor ullamcorper curae posuere, tellus curabitur varius praesent etiam fames nisl interdum.
                                                                                 </p>
                                                                                 <div class="am-projfund-buttons text-center">
-                                                                                        <a href="javascript:void(0)" id="Spark1" class="am-projfund-btn-Sparkle text-center">Sparkle <i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
-                                                                                        <a href="javascript:void(0)" id="Vote1" class="am-projfund-btn-Vote text-center">VOTE</a>
+                                                                                        <a href="javascript:void(0)" id="Spark" class="am-projfund-btn-Sparkle text-center">Sparkle <i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+                                                                                        <a href="javascript:void(0)" id="Vote" class="am-projfund-btn-Vote text-center">VOTE</a>
                                                                                 </div>
                                                                         </div>
-                                                                        <div class="col-lg-3 am-project-social">
-                                                                                <div class="row">
+                                                                        <div class="col-lg-3 col-sm-12">
                                                                                         <div class="am-navbar-logo"></div>
-                                                                                </div>
-                                                                                <div class="row">
-                                                                                        <div class="am-projfund-title right">Links:</div>
-                                                                                </div>
-                                                                                <div class="row">
-                                                                                        <hr class="hr-slim">
-                                                                                </div>
-                                                                                <div class="row">
-                                                                                        <div class="am-projfund-text right">Website</div>
-                                                                                </div>
-                                                                                <div class="row">
-                                                                                        <div class="am-projfund-text right">Twitter</div>
-                                                                                </div>
-                                                                                <div class="row">
-                                                                                        <div class="am-projfund-text right">Linked-In</div>
-                                                                                </div>
-                                                                                <div class="row">
-                                                                                        <div class="am-projfund-text right">Instagram</div>
-                                                                                </div>
                                                                         </div>
-                                                                        <div class="col-lg-3 am-project-social">
-                                                                                        <div class="row">
-                                                                                                <div class="am-projfund-title right">Keywords:</div>
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                                <hr class="hr-slim">
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                                <div class="am-projfund-text right">#Ecology</div>
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                                <div class="am-projfund-text right">#NewEnergy</div>
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                                <div class="am-projfund-text right">#Sun</div>
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                                <div class="am-projfund-text right">#Wind</div>
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                                <div class="am-projfund-text right">#Innovation</div>
-                                                                                        </div>
-                                                                                        <div class="row">
-                                                                                                <div class="am-projfund-text right">#Technology</div>
-                                                                                        </div>
+
+                                                                        <div class="col-lg-3 col-sm-6 am-project-social">
+                                                                                        <div class="am-projfund-title">Links:</div>
+                                                                                        <hr class="hr-slim">
+                                                                                        <div class="am-projfund-text right">Website</div>
+                                                                                
+                                                                                
+                                                                                        <div class="am-projfund-text right">Twitter</div>
+                                                                                
+                                                                                
+                                                                                        <div class="am-projfund-text right">Linked-In</div>
+                                                                                
+                                                                                
+                                                                                        <div class="am-projfund-text right">Instagram</div>
+                                                                                
+                                                                        </div>
+                                                                        <div class="col-lg-3 col-sm-6 am-project-social">
+                                                                                
+                                                                                        <div class="am-projfund-title">Keywords:</div>
+                                                                                        <hr class="hr-slim">
+                                                                                
+                                                                                
+                                                                                        <div class="am-projfund-text right">#Ecology</div>
+                                                                                
+                                                                                
+                                                                                        <div class="am-projfund-text right">#NewEnergy</div>
+                                                                                
+                                                                                
+                                                                                        <div class="am-projfund-text right">#Sun</div>
+                                                                                
+                                                                                
+                                                                                        <div class="am-projfund-text right">#Wind</div>
+                                                                                
+                                                                                
+                                                                                        <div class="am-projfund-text right">#Innovation</div>
+                                                                                
+                                                                                
+                                                                                        <div class="am-projfund-text right">#Technology</div>
+                                                                                
                                                                         </div>
                                                                 </div>
-
                                                         </div>
                                                 </div>
-                                        </div> -->
-
+                                        </div>
 
                                         <div class="col-lg-12 am-projects-container">
-                                                        <div class="row am-project-expand">
+                                                        <div class="row am-project-expand row-eq-height">
                                                                 <div class="col-sm-12 col-md-3 am-projects-img-thumb-container">
                                                                         <img class="img-responsive am-projects-img-thumb" src="assets/images/ecology_project_2.jpg">
                                                                 </div>
@@ -297,7 +294,7 @@
                                                         <div class="container-fluid am-project-description">
 
                                                                 <div class="col-md-3 col-sm-12 am-projfund-items2">
-                                                                        <h3 class="expand" style="display:inline-block;">Ecology Project</h3>
+                                                                        <h3 class="expand">Ecology Project</h3>
                                                                         <span class="seeLess mobile">
                                                                                 <i class="fa fa-times expand" aria-hidden="true"></i>
                                                                         </span>
@@ -391,14 +388,44 @@
                                                         </div>
                                                 </div>
                                         </div>
-
-
-
                                 </div>
                                 
                         </div>
                 </div>
         </div>
+
+        <footer>
+             <div class="container-fluid am-footer">
+                    <div class="row">
+                      <a class="btn btn-social-icon btn-facebook">
+                        <span class="fa fa-facebook"></span>
+                      </a>
+                      <a class="btn btn-social-icon btn-twitter">
+                        <span class="fa fa-twitter"></span>
+                      </a>
+                      <a class="btn btn-social-icon btn-linkedin">
+                        <span class="fa fa-linkedin"></span>
+                      </a>
+                      <a class="btn btn-social-icon btn-pinterest">
+                        <span class="fa fa-pinterest"></span>
+                      </a>
+                      <a class="btn btn-social-icon btn-google">
+                        <span class="fa fa-google"></span>
+                      </a>
+
+                      <hr class="hr-slim">
+                    </div>
+                    <ul class="footer-links">
+                        <li>HOME</li>
+                        <li>GOALS</li>
+                        <li>PRODUCTS</li>
+                        <li>ABOUT</li>
+                        <li>FAQ</li>
+                        <li>CONTACT</li>
+                    </ul>
+                    <p> COLLECTIEVLY CRAFTED WITH <i class="fa fa-heart" aria-hidden="true"></i> FOR AMARIS FOUNDATION </p>
+                </div>
+        </footer>
 
 
         
