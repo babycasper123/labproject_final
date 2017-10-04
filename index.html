@@ -5,23 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="icon" href="assets/images/favicon.ico" type="image/gif" sizes="16x16">
+  <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
   
-  <!-- Core Stylesheets and JS -->
-
-  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="dist/font-awesome-4.7.0/css/font-awesome.min.css">
-  <script src="dist/js/jquery.min.js"></script>
-  <script src="dist/js/bootstrap.min.js"></script>
-    
-  <!-- Custom Styles and plugins -->
-  
-  <link rel="stylesheet" href="assets/css/custom.css?v=1">
-  <script src="assets/js/custom.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap-social.css">
-  <script src="assets/js/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="css/sweetalert2.min.css">
+  <link rel="stylesheet" href="css/bootstrap-social.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
@@ -30,359 +22,295 @@
               
         <header>
                 <div id="mySidenav" class="sidenav side-close">
-                        <a class="sidenav-items" href="index.html">Homepage</a>
-                        <a class="sidenav-items" href="https://www.amaris.com/">Amaris</a>
-                        <a class="sidenav-items" href="propose_project.html">Propose a project</a>
+                        <ul>
+                                <li><a href="index.html" title="Homepage" alt="Homepage">Homepage</a></li>
+                                <li><a href="https://www.amaris.com/" title="Amaris" alt="Amaris">Amaris</a></li>
+                                <li><a href="propose_project.html" title="Propose a project" alt="Propose a project">Propose a project</a></li>
+                        </ul>
                 </div>
-
+                
                 <div class="container-fluid">
-                        <div class="row header">
-                                <div class="col-xs-4 col-sm-4 am-navbar-toggle-container">
-                                        <span class="am-navbar-toggle-btn am-nav-open"></span>
-                                        <span class="am-navbar-toggle-text">Projects</span>
+                        <div class="row">
+                                <div class="col-xs-4 col-sm-4">
+                                        <div class="projects">
+                                                <span class="sidenav-toggle nav-open"></span>
+                                                <span>Projects</span>
+                                        </div>       
                                 </div>
-                                <a href="index.html">
-                                        <div class="col-xs-8 col-sm-4 am-navbar-logo"></div>
-                                </a>
+                                
+                                <div class="col-xs-8 col-sm-4">
+                                        <a href="index.html" title="Home" alt="NavbarLogo">
+                                                <div class=" am-navbar-logo"></div>
+                                        </a>
+                                </div>
+                                
                                 <div class="col-md-4 col-xs-12">
-                                        <div class="am-navbar-btnholder">
-                                        <a href="propose_project.html" class="am-btn active text-center">Connect</a>
-                                        <a href="mailto: labfoundation@amaris.com" class="am-btn text-center">Contact</a>
+                                        <div class="navBtnHolder">
+                                                <a href="propose_project.html" class="button active" title="Connect" alt="Connect">Connect</a>
+                                                <a href="mailto: labfoundation@amaris.com" class="button" title="Contact" alt="Contact">Contact</a>
                                         </div>
                                 </div>
                         </div>
-                </div>
+                </div> 
         </header>
 
 
-        <div class="container-fluid am-top-poster"><div class="row"></div></div>
+        <div class="container-fluid">
+                <div class="row">
+                        <div class="am-top-poster"></div>
+                </div>
+        </div>
 
         
-        <div class="container-fluid">
-                <div class="row am-about">
-                        <div class="am-inner-container container">
-                                <div class="row">
-                                        <h3 class="am-article-title">About</h3>
-                                        <h4 class="am-article-subtitle">What's the point ?</h4>
-                                        <hr>
-                                        <p class="am-article-text">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C., le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé à un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, et en étudiant tous les usages de ce mot dans la littérature classique, découvrit la source incontestable du Lorem Ipsum. Il provient en fait des sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" (Des Suprêmes Biens et des Suprêmes Maux) de Cicéron. Cet ouvrage, très populaire pendant la Renaissance, est un traité sur la théorie de l'éthique.</p>
-                                </div>
-                        </div>
-                </div>
-        </div>
-
-
-        <div class="container-fluid desc-container">
-                <div class="row am-desc">
-                        <div class="am-inner-container container">
-                                <div class="row">
-                                        <h3 id="opertaions-title" class="am-article-title">OUR OPERATION</h3>  
-                                        <div class="col-lg-4 am-operations-items"><i class="fa fa-users am-operations-icons" aria-hidden="true"></i><p class="am-operations-text">A collaborative collection</p></div>
-                                        <div class="col-lg-4 am-operations-items"><i class="fa fa-globe am-operations-icons" aria-hidden="true"></i><p class="am-operations-text">A worldwide search</p></div>
-                                        <div class="col-lg-4 am-operations-items"><i class="fa fa-lightbulb-o am-operations-icons" aria-hidden="true"></i><p class="am-operations-text">A large action scope</p></div>
-                                </div>
-                        </div>
-                </div>
-        </div>
-
-        <div class="container-fluid">
-                <div class="row am-about">
-                        <div class="am-inner-container container">
-                                <div class="row">
-                                        <h4 class="am-article-subtitle">How does it work ?</h4>
-                                        <hr>
-                                        <div class="am-work-items container-fluid">
-                                                <div class="col-md-3 am-work-img">
-                                                        <span><i class="fa fa-money am-work-icons" aria-hidden="true"></i></span>
-                                                </div>
-                                                <div class="col-md-9 ">
-                                                        <span>
-                                                                <h3 class="am-work-title">MAKE A DONATION</h3>
-                                                                <p class="am-work-desc"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-                                                        </span>
-                                                </div>
-
-                                        </div>
-                                        <div class="am-work-items container-fluid">
-                                                <div class="col-md-3 am-work-img">
-                                                        <span><i class="fa fa-lightbulb-o am-work-icons" aria-hidden="true"></i></span>
-                                                </div>
-                                                <div class="col-md-9 am-work-text">
-                                                        <span>
-                                                                <h3 class="am-work-title">PROPOSE A PROJECT</h3>
-                                                                <p class="am-work-desc">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-                                                        </span>
-                                                </div>
-
-                                        </div>
-                                        <div class="am-work-items container-fluid">
-                                                <div class="col-md-3 am-work-img">
-                                                        <span><i class="fa fa-hand-peace-o am-work-icons" aria-hidden="true"></i></span>
-                                                </div>
-                                                <div class="col-md-9 am-work-text">
-                                                        <span>
-                                                                <h3 class="am-work-title">VOTE FOR A PROJECT</h3>
-                                                                <p class="am-work-desc">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-                                                        </span>
-                                                </div>
-
-                                        </div>
-                                </div>
-                                
-                        </div>
-                </div>
-        </div>
-
-        <div class="container-fluid">
-                <div class="row am-about">
-                        <div class="am-inner-container container">
-                                <div class="row">
-                                        <h4 class="am-article-subtitle">Previous projects funded</h4>
-                                        <hr>
-                                        <div class="col-lg-12 am-projects-container">
-                                                        <div class="row am-project-expand row-eq-height">
-                                                                <div class="col-sm-12 col-md-3 am-projects-img-thumb-container">
-                                                                        <img class="img-responsive am-projects-img-thumb" src="assets/images/ecology_project.jpg">
-                                                                </div>
         
-                                                                <div class="col-md-9 col-xs-12">
-                                                                        <div class="am-columns am-projfund-items2">
-                                                                                <h3>Ecology Project</h3>
-                                                                                <p>My Association - 09/13/16</p>
-                                                                        </div>
-                                                                        <div class="am-columns am-projfund-items1">
-                                                                                <p>#Ecology #Sun #Random</p>
-                                                                        </div>
-                                                                        <div class="am-columns am-projfund-items1">
-                                                                                <p>33,333$ Donated</p>
-                                                                        </div>
-                                                                        <div class="am-columns am-projfund-items1 seeMore">
-                                                                                <a href="javascript:void(0)" class="am-projfund-btn text-center">See More</a>
-                                                                        </div>
-                                                                </div>
-                                                </div>
+        <div class="container">
+                <div class="center-box">
+                        <div class="row">
+                                <div class="article">
+                                        <h3>About</h3>
+                                        <h4>What's the point ?</h4>
+                                        <hr>
+                                        <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C., le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé à un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, et en étudiant tous les usages de ce mot dans la littérature classique, découvrit la source incontestable du Lorem Ipsum. Il provient en fait des sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" (Des Suprêmes Biens et des Suprêmes Maux) de Cicéron. Cet ouvrage, très populaire pendant la Renaissance, est un traité sur la théorie de l'éthique.</p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+              
 
-                                                <div class="row am-project-shrinked">
-                                                        <div class="am-projects-img-container non-mobile">
-                                                                <img class="am-projects-img-expand" src="assets/images/ecology_project.jpg">
+        <div class="container-fluid">
+                <div class="row">
+                        <div class="desc-container">
+                                <div class="container">
+                                        <div class="center-box operations">
+                                                <div class="row">
+                                                        <h3>OUR OPERATION</h3>
+                                                        <div class="col-lg-4">
+                                                                <div class="operation-item">
+                                                                        <i class="fa fa-users"></i>
+                                                                        <p>A collaborative collection</p>
+                                                                </div>
                                                         </div>
-                                                        <div class="container-fluid am-project-description">
-
-                                                                <div class="col-md-3 col-sm-12 am-projfund-items2">
-                                                                        <h3 class="expand">Ecology Project</h3>
-                                                                        <span class="seeLess mobile">
-                                                                                <i class="fa fa-times expand" aria-hidden="true"></i>
-                                                                        </span>
-                                                                        <div class="expand">My Association - 09/13/16</div>
+                                                        <div class="col-lg-4">
+                                                                <div class="operation-item">
+                                                                        <i class="fa fa-globe"></i>
+                                                                        <p>A worldwide search</p>
                                                                 </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                                <div class="operation-item">
+                                                                        <i class="fa fa-lightbulb-o"></i>
+                                                                        <p>A large action scope</p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div> 
+        </div>
 
-                                                                <div class="col-md-9 col-sm-12">
-                                                                        <div class="am-projfund-items1">
-                                                                                <span class="expand sparkle-holder">
-                                                                                        <span data-sparkCount="12" class="sparkle Spark">12</span>
-                                                                                        <span data-voteCount ="12" class="sparkle-count"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span>
-                                                                                </span>
-                                                                                <span class="expand vote-holder">
-                                                                                        <span class="vote Vote">12</span>
-                                                                                        <span class="vote-count"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                                                                                </span>
-                                                                                <span class="expand am-projfund-tags">#Ecology #Sun #Random</span>
-                                                                                <span class="seeLess non-mobile">
-                                                                                        <i class="fa fa-times expand" aria-hidden="true"></i>
-                                                                                </span>
+
+
+        <div class="container-fluid">
+                <div class="row">
+                        <div class="container">
+                                <div class="center-box">
+                                        <div class="row">
+                                                <div class="work-title">
+                                                        <h4>How does it work ?</h4>
+                                                        <hr>
+                                                </div>
+                                                
+                                                <div class="work-items">
+                                                        <div class="row">
+                                                                <div class="col-md-3">
+                                                                        <div class="work-img">
+                                                                                <span><i class="fa fa-money"></i></span>
                                                                         </div>
                                                                 </div>
+                                                                <div class="col-md-9">
+                                                                        <span class="work-text">
+                                                                                <h3>MAKE A DONATION</h3>
+                                                                                <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                                                                        </span>
+                                                                </div>
+                                                        </div>   
+                                                </div>  
 
-                                                        </div> 
-                                                        <div class="container-fluid am-project-description-2">
-                                                                <div class="row">
-                                                                        <div class="col-lg-9 col-sm-12">
-                                                                                <span class="am-projfund-title">Domain of action : </span>
-                                                                                <span class="am-projfund-subtitle">Energetic Independance </span>
-                                                                                <div class="am-projfund-title spacer">Description:</div>
-                                                                                <hr>
-                                                                                <p class="am-projfund-text">Lorem ipsum volutpat quisque sem curabitur amet tempus elit, fringilla accumsan mollis lorem auctor inceptos hac etiam congue integer enim at praesent sagittis potenti nunc turpis lacus aliquam nisi consequat.
-                                                                                                
-                                                                                                Est libero sem purus rutrum ac mollis nam dolor, per suspendisse tempor ullamcorper dictumst lectus leo, nulla tristique sodales pretium posuere lorem class ornare faucibus vel a conubia enim accumsan.
-                                                                                                
-                                                                                                Nec iaculis est aptent augue litora vestibulum, nisl vehicula habitasse quisque semper adipiscing, ultrices netus suscipit porttitor aptent elementum convallis mauris pretium maecenas cubilia, et aenean himenaeos fermentum nisi, sodales dictumst litora ultricies.
-                                                                                                
-                                                                                                Risus gravida ipsum accumsan sodales risus est imperdiet, curabitur inceptos faucibus nam aliquam cursus varius, mattis nulla nunc adipiscing donec pharetra.
-                                                                                                
-                                                                                                Varius scelerisque risus porttitor praesent porttitor enim nunc curabitur amet, aliquam ac convallis fusce non auctor ullamcorper curae posuere, tellus curabitur varius praesent etiam fames nisl interdum.
-                                                                                </p>
-                                                                                <div class="am-projfund-buttons text-center">
-                                                                                        <a href="javascript:void(0)" id="Spark" class="am-projfund-btn-Sparkle text-center">Sparkle <i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
-                                                                                        <a href="javascript:void(0)" id="Vote" class="am-projfund-btn-Vote text-center">VOTE</a>
+                                                <div class="work-items">
+                                                        <div class="row">
+                                                                <div class="col-md-3">
+                                                                        <div class="work-img">
+                                                                                <span><i class="fa fa-lightbulb-o"></i></span>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="col-md-9">
+                                                                        <span class="work-text">
+                                                                                <h3>VOTE FOR A PROJECT</h3>
+                                                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                                                                        </span>
+                                                                </div>
+                                                        </div>   
+                                                </div>
+
+                                                <div class="work-items">
+                                                        <div class="row">
+                                                                <div class="col-md-3">
+                                                                        <div class="work-img">
+                                                                                <span><i class="fa fa-hand-peace-o"></i></span>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="col-md-9">
+                                                                        <span class="work-text">
+                                                                                <h3>VOTE FOR A PROJECT</h3>
+                                                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                                                                        </span>
+                                                                </div>
+                                                        </div>   
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+
+
+
+
+        <div class="container-fluid">
+                <div class="row">
+                        <div class="container">
+                                <div class="row">
+                                        <div class="center-box">
+                                                <div class="article">
+                                                        <h4 class="am-article-subtitle">Previous projects funded</h4>
+                                                        <hr>
+                                                </div>
+                                               
+                                                <div class="col-lg-12">
+                                                        <div class="mini-project">
+                                                                <div class="row row-eq-height">
+                                                                        <div class="col-sm-12 col-md-3">
+                                                                                <div class="project-image">
+                                                                                        <img alt="ecology_project_img" class="img-responsive" src="images/ecology_project.jpg">
                                                                                 </div>
                                                                         </div>
-                                                                        <div class="col-lg-3 col-sm-12">
-                                                                                        <div class="am-navbar-logo"></div>
-                                                                        </div>
-
-                                                                        <div class="col-lg-3 col-sm-6 am-project-social">
-                                                                                        <div class="am-projfund-title">Links:</div>
-                                                                                        <hr class="hr-slim">
-                                                                                        <div class="am-projfund-text right">Website</div>
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">Twitter</div>
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">Linked-In</div>
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">Instagram</div>
-                                                                                
-                                                                        </div>
-                                                                        <div class="col-lg-3 col-sm-6 am-project-social">
-                                                                                
-                                                                                        <div class="am-projfund-title">Keywords:</div>
-                                                                                        <hr class="hr-slim">
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">#Ecology</div>
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">#NewEnergy</div>
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">#Sun</div>
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">#Wind</div>
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">#Innovation</div>
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">#Technology</div>
-                                                                                
-                                                                        </div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
-
-                                        <div class="col-lg-12 am-projects-container">
-                                                        <div class="row am-project-expand row-eq-height">
-                                                                <div class="col-sm-12 col-md-3 am-projects-img-thumb-container">
-                                                                        <img class="img-responsive am-projects-img-thumb" src="assets/images/ecology_project_2.jpg">
-                                                                </div>
-        
-                                                                <div class="col-md-9 col-xs-12">
-                                                                        <div class="am-columns am-projfund-items2">
-                                                                                <h3>Ecology Project</h3>
-                                                                                <p>My Association - 09/13/16</p>
-                                                                        </div>
-                                                                        <div class="am-columns am-projfund-items1">
-                                                                                <p>#Ecology #Sun #Random</p>
-                                                                        </div>
-                                                                        <div class="am-columns am-projfund-items1">
-                                                                                <p>33,333$ Donated</p>
-                                                                        </div>
-                                                                        <div class="am-columns am-projfund-items1 seeMore">
-                                                                                <a href="javascript:void(0)" class="am-projfund-btn text-center">See More</a>
-                                                                        </div>
-                                                                </div>
-                                                </div>
-
-                                                <div class="row am-project-shrinked">
-                                                        <div class="am-projects-img-container non-mobile">
-                                                                <img class="am-projects-img-expand" src="assets/images/ecology_project_2.jpg">
-                                                        </div>
-                                                        <div class="container-fluid am-project-description">
-
-                                                                <div class="col-md-3 col-sm-12 am-projfund-items2">
-                                                                        <h3 class="expand">Ecology Project</h3>
-                                                                        <span class="seeLess mobile">
-                                                                                <i class="fa fa-times expand" aria-hidden="true"></i>
-                                                                        </span>
-                                                                        <div class="expand">My Association - 09/13/16</div>
-                                                                </div>
-
-                                                                <div class="col-md-9 col-sm-12">
-                                                                        <div class="am-projfund-items1">
-                                                                                <span class="expand sparkle-holder">
-                                                                                        <span data-sparkCount="12" class="sparkle Spark2">12</span>
-                                                                                        <span data-voteCount ="12" class="sparkle-count"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span>
-                                                                                </span>
-                                                                                <span class="expand vote-holder">
-                                                                                        <span class="vote Vote2">12</span>
-                                                                                        <span class="vote-count"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                                                                                </span>
-                                                                                <span class="expand am-projfund-tags">#Ecology #Sun #Random</span>
-                                                                                <span class="seeLess non-mobile">
-                                                                                        <i class="fa fa-times expand" aria-hidden="true"></i>
-                                                                                </span>
-                                                                        </div>
-                                                                </div>
-
-                                                        </div> 
-                                                        <div class="container-fluid am-project-description-2">
-                                                                <div class="row">
-                                                                        <div class="col-lg-9 col-sm-12">
-                                                                                <span class="am-projfund-title">Domain of action : </span>
-                                                                                <span class="am-projfund-subtitle">Energetic Independance </span>
-                                                                                <div class="am-projfund-title spacer">Description:</div>
-                                                                                <hr>
-                                                                                <p class="am-projfund-text">Lorem ipsum volutpat quisque sem curabitur amet tempus elit, fringilla accumsan mollis lorem auctor inceptos hac etiam congue integer enim at praesent sagittis potenti nunc turpis lacus aliquam nisi consequat.
-                                                                                                
-                                                                                                Est libero sem purus rutrum ac mollis nam dolor, per suspendisse tempor ullamcorper dictumst lectus leo, nulla tristique sodales pretium posuere lorem class ornare faucibus vel a conubia enim accumsan.
-                                                                                                
-                                                                                                Nec iaculis est aptent augue litora vestibulum, nisl vehicula habitasse quisque semper adipiscing, ultrices netus suscipit porttitor aptent elementum convallis mauris pretium maecenas cubilia, et aenean himenaeos fermentum nisi, sodales dictumst litora ultricies.
-                                                                                                
-                                                                                                Risus gravida ipsum accumsan sodales risus est imperdiet, curabitur inceptos faucibus nam aliquam cursus varius, mattis nulla nunc adipiscing donec pharetra.
-                                                                                                
-                                                                                                Varius scelerisque risus porttitor praesent porttitor enim nunc curabitur amet, aliquam ac convallis fusce non auctor ullamcorper curae posuere, tellus curabitur varius praesent etiam fames nisl interdum.
-                                                                                </p>
-                                                                                <div class="am-projfund-buttons text-center">
-                                                                                        <a href="javascript:void(0)" id="Spark2" class="am-projfund-btn-Sparkle text-center">Sparkle <i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
-                                                                                        <a href="javascript:void(0)" id="Vote2" class="am-projfund-btn-Vote text-center">VOTE</a>
+                
+                                                                        <div class="col-md-9 col-xs-12">
+                                                                                <div class="mini-description">
+                                                                                        <div class="mini-columns">
+                                                                                                <h3>Ecology Project</h3>
+                                                                                                <p>My Association - 09/13/16</p>
+                                                                                        </div>
+                                                                                        <div class="mini-columns">
+                                                                                                <p>#Ecology #Sun #Random</p>
+                                                                                        </div>
+                                                                                        <div class="mini-columns">
+                                                                                                <p>33,333$ Donated</p>
+                                                                                        </div>
+                                                                                        <div class="mini-columns seeMore">
+                                                                                                <a href="javascript:void(0)" class="am-projfund-btn text-center" alt="Seemore" title="Seemore">See More</a>
+                                                                                        </div>
                                                                                 </div>
                                                                         </div>
-                                                                        <div class="col-lg-3 col-sm-12">
-                                                                                        <div class="am-navbar-logo"></div>
-                                                                        </div>
+                                                                </div>
+                                                        </div>
 
-                                                                        <div class="col-lg-3 col-sm-6 am-project-social">
-                                                                                        <div class="am-projfund-title">Links:</div>
-                                                                                        <hr class="hr-slim">
-                                                                                        <div class="am-projfund-text right">Website</div>
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">Twitter</div>
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">Linked-In</div>
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">Instagram</div>
-                                                                                
+
+                                                        <div class="lg-project">
+                                                                <div class="project-image non-mobile">
+                                                                        <img alt="ecology_project" src="images/ecology_project.jpg">
+                                                                </div>
+                                                                
+                                                                <div class="description-header">
+                                                                        <div class="container-fluid">
+                                                                                <div class="col-md-3 col-sm-12">
+                                                                                        <div class="date-info">
+                                                                                                <h3 class="expand">Ecology Project</h3>
+                                                                                                <span class="seeLess mobile">
+                                                                                                        <i class="fa fa-times"></i>
+                                                                                                </span>
+                                                                                                <div class="expand">My Association - 09/13/16</div>
+                                                                                        </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-9 col-sm-12">
+                                                                                        <div class="columns">
+                                                                                                <span class="expand sparkle-holder">
+                                                                                                        <span data-sparkCount="12" class="sparkle Spark">12</span>
+                                                                                                        <span data-voteCount ="12" class="sparkle-count"><i class="fa fa-paper-plane-o"></i></span>
+                                                                                                </span>
+                                                                                                <span class="expand vote-holder">
+                                                                                                        <span>12</span>
+                                                                                                        <span><i class="fa fa-envelope-o"></i></span>
+                                                                                                </span>
+                                                                                                <span class="expand am-projfund-tags">#Ecology #Sun #Random</span>
+                                                                                                <span class="seeLess non-mobile">
+                                                                                                        <i class="fa fa-times expand"></i>
+                                                                                                </span>
+                                                                                        </div>
+                                                                                </div>
                                                                         </div>
-                                                                        <div class="col-lg-3 col-sm-6 am-project-social">
-                                                                                
-                                                                                        <div class="am-projfund-title">Keywords:</div>
-                                                                                        <hr class="hr-slim">
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">#Ecology</div>
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">#NewEnergy</div>
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">#Sun</div>
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">#Wind</div>
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">#Innovation</div>
-                                                                                
-                                                                                
-                                                                                        <div class="am-projfund-text right">#Technology</div>
-                                                                                
+                                                                </div> 
+                                                                
+                                                                <div class="container-fluid">
+                                                                        <div class="row">
+                                                                                <div class="description">
+                                                                                        <div class="col-lg-9 col-sm-12">
+                                                                                                <span class="am-projfund-title">Domain of action : </span>
+                                                                                                <span class="am-projfund-subtitle">Energetic Independance </span>
+                                                                                                <div class="am-projfund-title spacer">Description:</div>
+                                                                                                <hr>
+                                                                                                <p class="am-projfund-text">Lorem ipsum volutpat quisque sem curabitur amet tempus elit, fringilla accumsan mollis lorem auctor inceptos hac etiam congue integer enim at praesent sagittis potenti nunc turpis lacus aliquam nisi consequat.
+                                                                                                                
+                                                                                                                Est libero sem purus rutrum ac mollis nam dolor, per suspendisse tempor ullamcorper dictumst lectus leo, nulla tristique sodales pretium posuere lorem class ornare faucibus vel a conubia enim accumsan.
+                                                                                                                
+                                                                                                                Nec iaculis est aptent augue litora vestibulum, nisl vehicula habitasse quisque semper adipiscing, ultrices netus suscipit porttitor aptent elementum convallis mauris pretium maecenas cubilia, et aenean himenaeos fermentum nisi, sodales dictumst litora ultricies.
+                                                                                                                
+                                                                                                                Risus gravida ipsum accumsan sodales risus est imperdiet, curabitur inceptos faucibus nam aliquam cursus varius, mattis nulla nunc adipiscing donec pharetra.
+                                                                                                                
+                                                                                                                Varius scelerisque risus porttitor praesent porttitor enim nunc curabitur amet, aliquam ac convallis fusce non auctor ullamcorper curae posuere, tellus curabitur varius praesent etiam fames nisl interdum.
+                                                                                                </p>
+                                                                                                <div class="am-projfund-buttons text-center">
+                                                                                                        <a href="javascript:void(0)" id="Spark" class="am-projfund-btn-Sparkle text-center" alt="Sparkle" title="Sparkle">Sparkle <i class="fa fa-paper-plane-o"></i></a>
+                                                                                                        <a href="javascript:void(0)" id="Vote" class="am-projfund-btn-Vote text-center"alt="Vote" title="Vote">VOTE</a>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-3 col-sm-12">
+                                                                                                        <div class="am-navbar-logo"></div>
+                                                                                        </div>
+
+                                                                                        <div class="col-lg-3 col-sm-6">
+                                                                                                <div class=" am-project-social">
+                                                                                                        <div class="am-projfund-title">Links:</div>
+                                                                                                        <hr class="hr-slim">
+                                                                                                        <div class="right">
+                                                                                                                <p>Website</p>
+                                                                                                                <p>Twitter</p>
+                                                                                                                <p>Linked-In</p>
+                                                                                                                <p>Instagram</p>
+                                                                                                        </div>
+                                                                                                        
+                                                                                                </div>
+                                                                                                
+                                                                                        </div>
+                                                                                        <div class="col-lg-3 col-sm-6">
+                                                                                                <div class="am-project-social">
+                                                                                                        <div class="am-projfund-title">Keywords:</div>
+                                                                                                        <hr class="hr-slim">
+                                                                                                        <div class="right">
+                                                                                                                <p>#Ecology</p>
+                                                                                                                <p>#NewEnergy</p>
+                                                                                                                <p>#Sun</p>
+                                                                                                                <p>#Wind</p>
+                                                                                                                <p>#Innovation</p>
+                                                                                                                <p >#Technology</p>
+                                                                                                        </div>
+                                                                                                        
+                                                                                                </div>
+                                                                                        </div>
+                                                                                </div>
                                                                         </div>
                                                                 </div>
                                                         </div>
@@ -397,19 +325,19 @@
         <footer>
              <div class="container-fluid am-footer">
                     <div class="row">
-                      <a target="_blank" href="https://www.facebook.com/amaris.official.page?fref=ts" class="btn btn-social-icon btn-facebook">
+                      <a target="_blank" alt="facebook" title="facebook" href="https://www.facebook.com/amaris.official.page?fref=ts" class="btn btn-social-icon btn-facebook">
                         <span class="fa fa-facebook"></span>
                       </a>
-                      <a target="_blank" href="https://twitter.com/Amaris" class="btn btn-social-icon btn-twitter">
+                      <a target="_blank" alt="twitter" title="twitter" href="https://twitter.com/Amaris" class="btn btn-social-icon btn-twitter">
                         <span class="fa fa-twitter"></span>
                       </a>
-                      <a target="_blank" href="https://www.linkedin.com/company/amaris" class="btn btn-social-icon btn-linkedin">
+                      <a target="_blank" alt="linked-in" title="linked-in" href="https://www.linkedin.com/company/amaris" class="btn btn-social-icon btn-linkedin">
                         <span class="fa fa-linkedin"></span>
                       </a>
-                      <a class="btn btn-social-icon btn-pinterest">
+                      <a alt="Pintrest" title="Pintrest" class="btn btn-social-icon btn-pinterest">
                         <span class="fa fa-pinterest"></span>
                       </a>
-                      <a target="_blank" href="https://plus.google.com/+amaris" class="btn btn-social-icon btn-google">
+                      <a target="_blank" alt="GooglePlus" title="GooglePlus" href="https://plus.google.com/+amaris" class="btn btn-social-icon btn-google">
                         <span class="fa fa-google"></span>
                       </a>
 
@@ -423,16 +351,16 @@
                         <li>FAQ</li>
                         <li>CONTACT</li>
                     </ul>
-                    <p> COLLECTIEVLY CRAFTED WITH <i class="fa fa-heart" aria-hidden="true"></i> FOR AMARIS FOUNDATION </p>
+                    <p> COLLECTIEVLY CRAFTED WITH <i class="fa fa-heart"></i> FOR AMARIS FOUNDATION </p>
                 </div>
         </footer>
 
 
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/sweetalert2.min.js"></script>
         
-
-
-
-
     
 </body>
 </html>

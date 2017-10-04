@@ -1,168 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Amaris Foundation</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="icon" href="assets/images/favicon.ico" type="image/gif" sizes="16x16">
-  
-  <!-- Core Stylesheets and JS -->
-
-  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="dist/font-awesome-4.7.0/css/font-awesome.min.css">
-  <script src="dist/js/jquery.min.js"></script>
-  <script src="dist/js/bootstrap.min.js"></script>
-    
-  <!-- Custom Styles and Plugins -->
-  
-  <link rel="stylesheet" href="assets/css/custom.css?v=1">
-  <script src="assets/js/custom.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap-social.css">
-  <script src="assets/js/sweetalert2.min.js"></script>
-
-</head>
+   <head>
+      <title>Amaris Foundation</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
+      
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/custom.css">
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link rel="stylesheet" href="css/sweetalert2.min.css">
+      <link rel="stylesheet" href="css/bootstrap-social.css">
+      <link rel="stylesheet" href="css/responsive.css">
 
 
-<body>
-              
-        <header>
+   </head>
+   <body>
+
+
+      <header>
                 <div id="mySidenav" class="sidenav side-close">
-                        <a class="sidenav-items" href="index.html">Homepage</a>
-                        <a href="propose_project.html" class="am-btn active text-center">Connect</a>
-                        <a href="mailto: labfoundation@amaris.com" class="am-btn text-center">Contact</a>
+                        <ul>
+                                <li><a href="index.html" title="Homepage" alt="Homepage">Homepage</a></li>
+                                <li><a href="https://www.amaris.com/" title="Amaris" alt="Amaris">Amaris</a></li>
+                                <li><a href="propose_project.html" title="Propose a project" alt="Propose a project">Propose a project</a></li>
+                        </ul>
                 </div>
-
+                
                 <div class="container-fluid">
-                        <div class="row header">
-                                <div class="col-xs-4 col-sm-4 am-navbar-toggle-container">
-                                        <span class="am-navbar-toggle-btn am-nav-open"></span>
-                                        <span class="am-navbar-toggle-text">Projects</span>
+                        <div class="row">
+                                <div class="col-xs-4 col-sm-4">
+                                        <div class="projects">
+                                                <span class="sidenav-toggle am-nav-open"></span>
+                                                <span>Projects</span>
+                                        </div>       
                                 </div>
-                                <a href="index.html">
-                                        <div class="col-xs-8 col-sm-4 am-navbar-logo"></div>
-                                </a>
+                                
+                                <div class="col-xs-8 col-sm-4">
+                                        <a href="index.html" title="Home" alt="NavbarLogo">
+                                                <div class=" am-navbar-logo"></div>
+                                        </a>
+                                </div>
+                                
                                 <div class="col-md-4 col-xs-12">
-                                        <div class="am-navbar-btnholder">
-                                        <a href="mailto: labfoundation@amaris.com" class="am-btn active text-center">Connect</a>
-                                        <a href="propose_project.html" class="am-btn text-center">Contact</a>
+                                        <div class="navBtnHolder">
+                                                <a href="propose_project.html" class="button active" title="Connect" alt="Connect">Connect</a>
+                                                <a href="mailto: labfoundation@amaris.com" class="button" title="Contact" alt="Contact">Contact</a>
                                         </div>
                                 </div>
                         </div>
-                </div>
+                </div> 
         </header>
-            
-        <div class="container-fluid hero-container"> 
-          <form action="#">
+
+
+
+
+
+      <div class="container-fluid hero-container">
+         <form id="connect" action="#">
             <div class="form-group">
-              <label for="email">Project Name</label>
-              <input type="text" class="form-control" id="email" placeholder="Enter email" required name="email">
+               <label for="email">Project Name</label>
+               <input type="text" class="form-control" id="pname" placeholder="Enter name" name="pname">
             </div>
             <div class="form-group">
-              <label for="description">Description:</label>
-              <textarea type="text" class="form-control propose" id="description" required placeholder="Enter description" name="description"></textarea> 
+               <label for="description">Description:</label>
+               <textarea type="text" class="form-control propose" id="description" required placeholder="Enter description" name="description"></textarea> 
             </div>
             <div class="form-group">
-              <label for="description">Keywords:</label>
-              <textarea type="text" class="form-control propose" id="description" placeholder="#Keywords" name="description"></textarea> 
+               <label for="description">Keywords:</label>
+               <textarea type="text" class="form-control propose" id="description" placeholder="#Keywords" name="description"></textarea> 
             </div>
             <div class="form-group">
-              <label for="Org">Name of the organizations/companies/users</label>
-              <input type="text" class="form-control" id="Org" placeholder="Organisation" name="Org" required>
+               <label for="Org">Name of the organizations/companies/users</label>
+               <input type="text" class="form-control" id="Org" placeholder="Organisation" name="Org" required>
             </div>
             <div class="form-group">
-              <label for="URL">Website URL:</label>
-              <input type="text" type="text" class="form-control propose" id="URL" placeholder="Enter URL" name="URL">
+               <label for="URL">Website URL:</label>
+               <input type="text" type="text" class="form-control propose" id="URL" placeholder="Enter URL" name="URL">
             </div>
             <div class="form-group">
-              <label for="scope">Scope of section:</label>
-              <select class="form-control" id="scope" required>
-                <option>Scope 1</option>
-                <option>Scope 2</option>
-                <option>Scope 3</option>
-                <option>Scope 4</option>
-              </select>
+               <label for="scope">Scope of section:</label>
+               <select class="form-control" id="scope" required>
+                  <option>Scope 1</option>
+                  <option>Scope 2</option>
+                  <option>Scope 3</option>
+                  <option>Scope 4</option>
+               </select>
             </div>
             <div class="form-group">
-              <label for="file">Upload Image:</label>
-              <input type="file"  class="form-control propose" id="file" name="file" required>
+               <label for="file">Upload Image:</label>
+               <input type="file"  class="form-control propose" id="file" name="file" required>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" name="remember" required>I Agree to the <a data-toggle="modal" href="#terms">Terms and Conditions</a></label>
+               <label><input type="checkbox" name="remember" required>I Agree to the <a data-toggle="modal" href="#terms">Terms and Conditions</a></label>
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-        </div>
-
-
-
-
-
-        <!-- Modal -->
-          <div class="modal fade" id="terms" role="dialog">
-            <div class="modal-dialog">
-            
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
+         </form>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="terms" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                   <h4 class="modal-title text-center">Terms and Conditions</h4>
-                </div>
-                <div class="modal-body">
-                  <h2>Rules for a non-profit organization to be selected: </h2>  
+               </div>
+               <div class="modal-body">
+                  <h2>Rules for a non-profit organization to be selected: </h2>
                   <h3>To be selected the project of the non-profit organization needs to:</h3>
                   <p> 1. Use technology and innovative solutions to help foster independence</p>
                   <p>2. Respect our rules of Ethic : no discrimination of any kind, no promotion of a political or religious organization</p>
                   <p>3. Have a local, concrete and measurable impact.</p>
                   <p>Then submitting a new non-profit organization to the Amaris Foundation is simple: collect all the information required with the non-profit organisation then complete the form here. For more details and information, take a look at the FAQ and at the Project Proposal Guidelines Any questions? Any doubts? Don't hesitate to contact us at foundation@amaris.com.</p>
-                </div>
-              </div>
-              
+               </div>
             </div>
-          </div>
-
-
-        <footer>
-             <div class="container-fluid am-footer">
-                    <div class="row">
-                      <a target="_blank" href="https://www.facebook.com/amaris.official.page?fref=ts" class="btn btn-social-icon btn-facebook">
-                        <span class="fa fa-facebook"></span>
-                      </a>
-                      <a target="_blank" href="https://twitter.com/Amaris" class="btn btn-social-icon btn-twitter">
-                        <span class="fa fa-twitter"></span>
-                      </a>
-                      <a target="_blank" href="https://www.linkedin.com/company/amaris" class="btn btn-social-icon btn-linkedin">
-                        <span class="fa fa-linkedin"></span>
-                      </a>
-                      <a class="btn btn-social-icon btn-pinterest">
-                        <span class="fa fa-pinterest"></span>
-                      </a>
-                      <a target="_blank" href="https://plus.google.com/+amaris" class="btn btn-social-icon btn-google">
-                        <span class="fa fa-google"></span>
-                      </a>
-
-                      <hr class="hr-slim">
-                    </div>
-                    <ul class="footer-links">
-                        <li>HOME</li>
-                        <li>GOALS</li>
-                        <li>PRODUCTS</li>
-                        <li>ABOUT</li>
-                        <li>FAQ</li>
-                        <li>CONTACT</li>
-                    </ul>
-                    <p> COLLECTIEVLY CRAFTED WITH <i class="fa fa-heart" aria-hidden="true"></i> FOR AMARIS FOUNDATION </p>
-                </div>
-        </footer>
-
-
-        
+         </div>
+      </div>
 
 
 
 
-    
-</body>
+
+      <footer>
+            <div class="container-fluid am-footer">
+                   <div class="row">
+                     <a target="_blank" alt="facebook" title="facebook" href="https://www.facebook.com/amaris.official.page?fref=ts" class="btn btn-social-icon btn-facebook">
+                       <span class="fa fa-facebook"></span>
+                     </a>
+                     <a target="_blank" alt="twitter" title="twitter" href="https://twitter.com/Amaris" class="btn btn-social-icon btn-twitter">
+                       <span class="fa fa-twitter"></span>
+                     </a>
+                     <a target="_blank" alt="linked-in" title="linked-in" href="https://www.linkedin.com/company/amaris" class="btn btn-social-icon btn-linkedin">
+                       <span class="fa fa-linkedin"></span>
+                     </a>
+                     <a alt="Pintrest" title="Pintrest" class="btn btn-social-icon btn-pinterest">
+                       <span class="fa fa-pinterest"></span>
+                     </a>
+                     <a target="_blank" alt="GooglePlus" title="GooglePlus" href="https://plus.google.com/+amaris" class="btn btn-social-icon btn-google">
+                       <span class="fa fa-google"></span>
+                     </a>
+
+                     <hr class="hr-slim">
+                   </div>
+                   <ul class="footer-links">
+                       <li>HOME</li>
+                       <li>GOALS</li>
+                       <li>PRODUCTS</li>
+                       <li>ABOUT</li>
+                       <li>FAQ</li>
+                       <li>CONTACT</li>
+                   </ul>
+                   <p> COLLECTIEVLY CRAFTED WITH <i class="fa fa-heart"></i> FOR AMARIS FOUNDATION </p>
+               </div>
+       </footer>
+
+
+
+
+
+      
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/sweetalert2.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+
+
+   </body>
 </html>
